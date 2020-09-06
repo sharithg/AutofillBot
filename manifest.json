@@ -2,9 +2,11 @@
   "name": "Autofill Bot",
   "version": "1.0",
   "description": "Autofill bot for quick checkout",
-  "background": {
-    "scripts": ["js/background.js"],
-    "persistent": false
-  },
-  "manifest_version": 2
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["js/autofill.js"]
+    }
+  ]
 }
