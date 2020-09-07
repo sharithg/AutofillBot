@@ -5,8 +5,16 @@
   "manifest_version": 2,
   "content_scripts": [
     {
-      "matches": ["https://www.streetwearofficial.com/*"],
+      "matches": [
+        "https://www.streetwearofficial.com/*",
+        "https://cncpts.com/*"
+      ],
       "js": ["js/autofill.js"]
     }
-  ]
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "deafult_title": "Popup here"
+  },
+  "permissions": ["storage"]
 }
