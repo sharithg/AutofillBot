@@ -14,12 +14,18 @@
   <style>
     .container {
       width: 500px;
+      padding: 10px 10px 10px 10px;
+    }
+
+    #success {
+      display: none;
     }
   </style>
   <body>
     <div class="container">
       <form>
         <h3>Dhevins a Bitch Chrome Extention</h3>
+
         <div class="form-group">
           <label for="firstName">First name</label>
           <input
@@ -88,6 +94,9 @@
         <button type="submit" class="btn btn-primary" id="submit_btn">
           Save Details
         </button>
+        <div class="alert alert-success" role="alert" id="success">
+          Details successfully saved!
+        </div>
       </form>
     </div>
   </body>

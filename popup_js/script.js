@@ -64,5 +64,13 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Value is set to " + document.getElementById("city").value);
       }
     );
+
+    successDiv = document.getElementById("success");
+
+    successDiv.style.display = "block";
+
+    setTimeout(function () {
+      successDiv.style.display = "none";
+    }, 3000);
   });
 });
