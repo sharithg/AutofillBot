@@ -30,6 +30,15 @@ document.addEventListener("DOMContentLoaded", function () {
         );
       }
     );
+    //address
+    chrome.storage.sync.set(
+      { address: document.getElementById("address").value },
+      function () {
+        console.log(
+          "Value is set to " + document.getElementById("address").value
+        );
+      }
+    );
     //phone number
     chrome.storage.sync.set(
       { phone_number: document.getElementById("phoneNumber").value },
