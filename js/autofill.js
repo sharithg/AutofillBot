@@ -5,6 +5,7 @@ var address = document.getElementById("checkout_shipping_address_address1");
 var city = document.getElementById("checkout_shipping_address_city");
 var phone = document.getElementById("checkout_shipping_address_phone");
 var zipcode = document.getElementById("checkout_shipping_address_zip");
+var checkoutBtn = document.getElementById("continue_button");
 
 chrome.storage.sync.get("first_name", function (result) {
   emailField.value = result.first_name;
@@ -33,3 +34,5 @@ chrome.storage.sync.get("zipcode", function (result) {
 chrome.storage.sync.get("city", function (result) {
   city.value = result.city;
 });
+
+checkoutBtn.click();
